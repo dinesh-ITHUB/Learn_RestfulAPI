@@ -1,4 +1,4 @@
-package Chaining;
+package ServiceNow.Chaining;
 
 import java.util.List;
 
@@ -8,7 +8,7 @@ import io.restassured.RestAssured;
 
 public class GetAll extends Base 
 {
-        @Test(priority = 2,dependsOnMethods = "Chaining.Create.createIncident")
+        @Test(priority = 2,dependsOnMethods = "ServiceNow.Chaining.Create.createIncident")
         public void GetAllIncident()
         {
         inputRequest = RestAssured.given().queryParams(querryparms);

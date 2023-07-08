@@ -1,4 +1,4 @@
-package Chaining;
+package ServiceNow.Chaining;
 
 import org.testng.annotations.Test;
 import io.restassured.RestAssured;

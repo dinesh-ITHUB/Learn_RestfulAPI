@@ -1,4 +1,4 @@
-package Chaining;
+package ServiceNow.Chaining;
 
 import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
@@ -8,7 +8,7 @@ import io.restassured.response.Response;
 
 public class GetBySysID extends Base
 {
-    @Test(priority = 3,dependsOnMethods = "Chaining.Create.createIncident") 
+    @Test(priority = 3,dependsOnMethods = "ServiceNow.Chaining.Create.createIncident") 
     public void getIncidentBySysId()
     {
         inputRequest = RestAssured.given().queryParams(querryparms);

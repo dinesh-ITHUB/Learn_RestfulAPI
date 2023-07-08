@@ -1,4 +1,4 @@
-package Chaining;
+package ServiceNow.Chaining;
 
 import java.io.File;
 
@@ -10,7 +10,7 @@ import io.restassured.response.Response;
 
 public class Update extends Base
 {
-    @Test(priority = 4,dependsOnMethods = "Chaining.Create.createIncident")
+    @Test(priority = 4,dependsOnMethods = "ServiceNow.Chaining.GetBySysID.getIncidentBySysId")
     public void updateIncident()
 
     {
